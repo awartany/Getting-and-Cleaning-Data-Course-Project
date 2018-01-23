@@ -34,7 +34,7 @@ The next step is to read label descriptions from file "activity_labels.txt" and 
 
 After that, `final_data_set` is merged with `activity_labels_table` using `activity_label` variable to add the corresponding activity descriptions to the data frame `final_data_set` under the variable `activity_description`
 
-## 4. Melting and casting the data to create final tidy_data_set.txt file
+## 5. Melting and casting the data to create final tidy_data_set.txt file
 The final step involves melting the data frame into one skinny data frame keeping the columns subject_id, activity_label, and activity_description as dimensions.
 
 Then the data is casted using `dcast` funciton and written to a file called tidy_data_set.txt in the working directory.
