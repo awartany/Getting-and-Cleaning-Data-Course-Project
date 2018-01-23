@@ -7,6 +7,9 @@ In the first part of the code, the zipped file containg all project data is down
 The zipped packages is downloaded from the following URL:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
+A description of the data set obtained from this expirement is available here:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 ## 2. Reading the data
 In this part, the following data files are read into R from their respective locations:
 - 'features.txt': List of all features.
