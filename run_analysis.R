@@ -11,7 +11,7 @@ library(data.table)
 features <- read.table("UCI HAR Dataset/features.txt")
 
 ## Read X training data set X_train.txt and apply the names from "features" data frame
-X_train <- fread("UCI HAR Dataset/train/X_train.txt", col.names = as.vector(features[,2]))
+X_train <- read.table("UCI HAR Dataset/train/X_train.txt", col.names = as.vector(features[,2]))
 
 ## Read Y training data set Y_train.txt and name the only variable as "activity_label"
 Y_train <- read.table("UCI HAR Dataset/train/Y_train.txt",col.names = "activity_label")
@@ -25,7 +25,7 @@ train <- cbind(subject_train,X_train,Y_train)
 
 
 ## Read X testing data set X_test.txt and apply the names from "features" data frame
-X_test<- fread("UCI HAR Dataset/test/X_test.txt", col.names = as.vector(features[,2]))
+X_test<- read.table("UCI HAR Dataset/test/X_test.txt", col.names = as.vector(features[,2]))
 
 ## Read Y testing data set Y_test.txt and name the only variable as "activity_label"
 Y_test <- read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "activity_label")
